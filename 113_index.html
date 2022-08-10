@@ -11,36 +11,58 @@
 		html{
 			background-color: #ddd;
 		}
+		/* ID header 的格式设置 */
 		#header{
+			/* 宽度左右撑满 */
 			width: 100%;
+			/* 高度80px */
 			height: 80px;
+			/* 背景颜色：whitesmoke */
 			background: whitesmoke;
+			/* 行高80px，和header高度相等，这样使得文字能上下居中 */
 			line-height: 80px;
 		}
+		/* header左侧的文字“水盐运移平台”命名为head */
 		#header .head{
+			/* head的字体大小为30px */
 			font-size: 30px;
+			/* 文字粗细 */
 			font-weight: 900;
+			/* head宽度也就是横向占网页的30% */
 			width:30%;
+			/* 左浮动，为了能和导航文字横向放置在一排 */
 			float: left;
+			/* 距离左侧外边距100px */
 			margin-left: 100px;
 		}
 		#header .navigation .nav{
+			/* 导航右浮动 */
 			float: right;
+			/* 上下边距为0，左右边距为15 */
 			margin: 0 15px;
+			/* 字体大小为20px */
 			font-size: 20px;
+			/* 超链接字体本来有下划线，此处设置none使其无下划线 */
 			text-decoration: none;
+			/* 导航字体设置为黑色 */
 			color: black;
 		}
+		/* 鼠标划上去之后的呈现出来的变化效果 */
 		#header .navigation .nav:hover{
 			float: right;
 			margin: 0 15px;
 			font-size: 20px;
 			text-decoration: none;
+			/* 其实只有这一处变化，就是鼠标放置上去之后，字体颜色变成红色 */
 			color: red;
 		}
 		#banner{
 			width: 100%;
 			background-color: white;
+			/*
+			作为 .banner-left 和 .banner-right 的父元素，设置为 overflow:auto; 
+			使得父元素可以忽略子元素的浮动，随着浮动子元素的高度而自动变化自己的高度。 
+			*/
 			overflow: auto;
 		}
 		#banner .banner-left{
@@ -53,7 +75,7 @@
 			float: left;
 		}
 		#banner .banner-left form input{
-			/*width: 150px; height: 80px; background-color: ghostwhite; font-size: 20px;*/
+			/* width: 150px; height: 80px; background-color: ghostwhite; font-size: 20px; */
 			background: #faebd700;
 			  margin-top: 1em;
 			  color:  #DC143C;
@@ -67,7 +89,7 @@
 			  border-radius: 10px;
 		}
 		#banner .banner-left form input:hover{
-			/*width: 150px; height: 80px; background-color: #5F9EA0; font-size: 20px;*/
+			/* width: 150px; height: 80px; background-color: #5F9EA0; font-size: 20px; */
 			color: white;
 			  background-color:  #DC143C;
 			  border: solid 2px  #DC143C;
@@ -119,6 +141,7 @@
 			版权所有：SSPU 自动驾驶实验室&nbsp；技术支持113实验室&nbsp&nbsp 
 			<img src="img/备案图标.png">
 			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37172802371741" style="color:#939393;">鲁公网安备 37172802371741号</a>&nbsp&nbsp 
+			<!--“沪ICP备2021032704号-1”超链接到https://beian.miit.gov.cn/，target="_blank" 表示在新的窗口打开该网页，颜色设置为：#939393-->
 			<a href="https://beian.miit.gov.cn/" target="_blank" style="color:#939393;">沪ICP备2021032704号-1</a>
 		</div>
 	</body>
